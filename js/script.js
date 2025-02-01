@@ -86,6 +86,8 @@ function getRandomPosition(rectangle, size) {
 document.addEventListener("DOMContentLoaded", function () {
   const videoFiles = [
     "media/video1.mp4",
+    "media/video2.mp4",
+    "media/video3.mp4",
   ];
 
   const randomIndex = Math.floor(Math.random() * videoFiles.length);
