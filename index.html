@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="NanoLux">
+    <meta property="og:description" content="NanoLux IT Company WebSite">
+    <meta property="og:image" content="media/image/logo_text.png">
+    <link rel="icon" type="image/ico" href="media/image/icon.ico">
+    <title>NanoLux | Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-text">Nanolux</span>
+                <div class="logo-shine"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#technologies">Технологии</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Инновационные программные решения</h1>
+                <p>Специализируемся на разработке на Python и Lua</p>
+                <button class="cta-button">Начать</button>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">main.py</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code id="code-animation"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О компании Nanolux</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nanolux — это передовая компания по разработке программного обеспечения, специализирующаяся на создании эффективных программ и скриптов. Мы сосредоточены на предоставлении высококачественных решений с использованием языков программирования Python и Lua.</p>
+                    <p>Наша команда опытных разработчиков посвящена созданию индивидуальных программных решений, которые соответствуют уникальным потребностям наших клиентов, обеспечивая оптимальную производительность и надежность.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Завершенных проектов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Лет опыта</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Наши услуги</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Разработка индивидуальных скриптов</h3>
+                    <p>Индивидуальные скрипты для автоматизации, обработки данных и управления системами с использованием Python и Lua.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Решения для автоматизации</h3>
+                    <p>Оптимизируйте свои рабочие процессы с помощью наших мощных инструментов и скриптов для автоматизации.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Обработка данных</h3>
+                    <p>Эффективные решения для обработки, анализа и визуализации данных для вашего бизнеса.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Скриптинг для игр</h3>
+                    <p>Профессиональный скриптинг на Lua для разработки игр и модификаций.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="technologies">
+            <h2>Наши технологии</h2>
+            <div class="tech-container">
+                <div class="tech-item">
+                    <div class="tech-icon python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="tech-bar">
+                        <div class="tech-progress python" style="width: 95%"></div>
+                    </div>
+                    <p>Веб-разработка, автоматизации, программы</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon lua">
+                        <span class="lua-text">Lua</span>
+                    </div>
+                    <h3>Lua</h3>
+                    <div class="tech-bar">
+                        <div class="tech-progress lua" style="width: 90%"></div>
+                    </div>
+                    <p>Разработка игр, встроенные системы, скирпты для игр</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://github.com/NanoLuxCompany/" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://funpay.com/users/5707335/" class="social-link">
+                            <img src="media/icon/fp.png" alt="FunPay">
+                        </a>
+                        <a href="https://playerok.com/profile/MV12team-shop/products" class="social-link">
+                            <img src="media/icon/pl.png" alt="Playerok">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Nanolux</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">О нас</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#technologies">Технологии</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nanolux. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
