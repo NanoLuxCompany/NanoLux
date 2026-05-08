@@ -31,6 +31,7 @@
             background-size: 40px 40px;
             z-index: 0;
             animation: gridMove 20s linear infinite;
+            pointer-events: none;
         }
         @keyframes gridMove {
             0% { transform: translate(0, 0); }
@@ -50,15 +51,6 @@
         .bg-glow-2 { background: #ff0055; bottom: -200px; right: -100px; }
         .bg-glow-3 { background: #5500ff; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
-        /* Pages */
-        .page {
-            display: none;
-            position: relative;
-            z-index: 1;
-            min-height: 100vh;
-            animation: fadeIn 0.3s ease;
-        }
-        .page.active { display: block; }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -72,8 +64,10 @@
             justify-content: center;
             padding: 40px 20px;
             min-height: 100vh;
+            position: relative;
+            z-index: 2;
         }
-        .menu-page.active { display: flex; }
+        .menu-page.active { display: flex; animation: fadeIn 0.3s ease; }
 
         .menu-logo {
             font-family: 'Orbitron', monospace;
@@ -158,6 +152,8 @@
             align-items: center;
             padding: 20px;
             min-height: 100vh;
+            position: relative;
+            z-index: 1;
         }
         .game-page.active { display: flex; }
 
